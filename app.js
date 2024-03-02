@@ -61,15 +61,30 @@ else{
 
 var game= prompt("Enter a Number for game till 1 to 10");
 if(game == 5){
-    document.write("Bingo");
+    document.write("Bingo\n");
 }
 else{
-    document.write("Close enough to the correct answer");
+    document.write("Close enough to the correct answer\n");
 }
 
 
 
 var fuel= prompt("How much fuel is remaining in your car");
 if(0.25 >= fuel){
-    document.write("Please refill the fuel in your car")
+    document.write("Please refill the fuel in your car\n<br>")
+}
+
+
+var trafficSignalRed= prompt("Enter a first traffic signal color");
+var trafficSignalYellow= prompt("Enter a second traffic signal color");
+var trafficSignalGreen= prompt("Enter a third traffic signal color");
+if(trafficSignalRed == "red" || trafficSignalYellow == "ready to move" || trafficSignalGreen == "move now"){
+    document.write("Signal Color" + ":       " + "Message\n<br> ");
+    document.write(trafficSignalRed + ":       " + "Must Stop\n<br> ");
+    document.write(trafficSignalYellow + ":       " + "Ready to move\n<br> ");
+    document.write(trafficSignalGreen + ":       " + "Move Now\n<br> ");
+}else if(trafficSignalYellow == "ready to move"){
+    document.write(trafficSignalYellow + ":       " + "Ready to move\n<br> ");
+}else{
+    document.write(trafficSignalGreen + ":       " + "Move Now\n<br> ");
 }
